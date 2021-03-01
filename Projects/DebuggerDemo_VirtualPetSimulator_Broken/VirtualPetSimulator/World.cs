@@ -16,11 +16,11 @@ namespace VirtualPetSimulator
 
         public World()
         {
-            LeoTheCat = new VirtualPet("Leo", 10, "Cat", ConsoleColor.DarkMagenta);
-            JuniorTheParrot = new VirtualPet("Junior", 5, "Parrot", ConsoleColor.DarkYellow);
+            LeoTheCat = new VirtualPet("Cat", 10, "Leo", ConsoleColor.DarkMagenta);
+            JuniorTheParrot = new VirtualPet("Junior", 5, "Parrot", ConsoleColor.DarkBlue);
             CallieTheUnicorn = new VirtualPet("Callie", 2, "Unicorn", ConsoleColor.DarkCyan);
-            Ball = new Toy("Red Ball", ConsoleColor.Red);
-            SqueakToy = new Toy("Squeak Toy", ConsoleColor.DarkGreen);
+            Ball = new Toy("Red Ball", ConsoleColor.DarkRed);
+            SqueakToy = new Toy("Squeak Toy", ConsoleColor.DarkYellow);
         }
 
         public void Run()
@@ -50,8 +50,8 @@ namespace VirtualPetSimulator
             JuniorTheParrot.Eat("a worm");
 
             WriteLine("\n> Pet 3");
-            CallieTheUnicorn.Greet();
-            CallieTheUnicorn.Eat("rainbows");
+            LeoTheCat.Greet();
+            LeoTheCat.Eat("rainbows");
 
             WriteLine("\n\nPress any key to exit...");
             ReadKey();

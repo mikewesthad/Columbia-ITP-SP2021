@@ -13,7 +13,7 @@ namespace VirtualPetSimulator
         public Toy(string toyName, ConsoleColor toyColor)
         {
             Color = toyColor;
-            Name = toyName;
+            toyName = Name;
         }
 
         public void DisplayName()

@@ -19,7 +19,6 @@ namespace VirtualPetSimulator
             FullName = petName;
             HappinessLevel = petHappiness;
             Species = petSpecies;
-            Color = petColor;
         }
 
         public void Greet()
@@ -34,7 +33,7 @@ namespace VirtualPetSimulator
 
         public void Eat(string foodName)
         {
-            WriteLine($"{FullName} is now eating {foodName}.");
+            WriteLine($"{foodName} is now eating {foodName}.");
         }
 
         public void PickUpToy(Toy toy)
@@ -59,9 +58,9 @@ namespace VirtualPetSimulator
         private void DisplayHappinessBar()
         {
             Write("Happiness level: [");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i > 10; i++)
             {
-                if (i < HappinessLevel)
+                if (i <= HappinessLevel)
                 {
                     Write("*");
                 }
